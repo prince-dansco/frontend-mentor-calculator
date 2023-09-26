@@ -34,7 +34,7 @@ function changeBackground(value) {
     } else {
         Tages.style.left = `0px`;
         body.style.backgroundColor = " hsl(222, 26%, 31%)";
-        backBtn.style.backgroundColor = "yellow "
+        // backBtn.style.backgroundColor = "yellow "
         content.style.color = "white"
         location.reload()
     }
@@ -69,8 +69,8 @@ function changeStyle2() {
     selection.style.backgroundColor = " hsl(268, 71%, 12%)";
     Tages.style.backgroundColor = "hsl(176, 100%, 44%)";
     body.style.backgroundColor = " hsl(268, 75%, 9%)";
-    backBtn.style.backgroundColor = "hsl(268, 71%, 12%) "
-    content.style.color = "yellow"
+    backBtn.style.backgroundColor = "hsl(268, 71%, 12%) ";
+    content.style.color = "yellow";
     submitTap.style.backgroundColor ="hsl(176, 100%, 44%)";
     submitTap.style.color ="white";
     clear.style.backgroundColor ="hsl(281, 89%, 26%)";
