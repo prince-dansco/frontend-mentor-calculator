@@ -10,7 +10,7 @@ let button = document.querySelectorAll('button');
 let selection = document.getElementsByClassName('section')[0];
 let body = document.body;
 
-let space = 20;
+let space = 15;
 Tages.addEventListener('click', function () {
     Tages.style.left = `${space}px`;
 
@@ -25,16 +25,15 @@ formTag.addEventListener('submit', function (event) {
     inputTap.value = eval(inputTap.value)
 })
 function changeBackground(value) {
-    if (value == 20) {
+    if (value == 15) {
         changeStyle();
-        
-    } else if (value == 40) {
+
+    } else if (value == 30) {
         changeStyle2()
-    
+
     } else {
         Tages.style.left = `0px`;
         body.style.backgroundColor = " hsl(222, 26%, 31%)";
-        // backBtn.style.backgroundColor = "yellow "
         content.style.color = "white"
         location.reload()
     }
@@ -48,10 +47,10 @@ function changeStyle() {
     inputTap.style.color = "black";
     body.style.backgroundColor = "  hsl(0, 0%, 90%)";
     backBtn.style.backgroundColor = "hsl(0, 5%, 81%)";
-    submitTap.style.backgroundColor ="hsl(25, 98%, 40%)";
-    submitTap.style.borderColor ="hsl(185, 58%, 25%)";
+    submitTap.style.backgroundColor = "hsl(25, 98%, 40%)";
+    submitTap.style.borderColor = "hsl(185, 58%, 25%)";
     clear.style.backgroundColor = "hsl(185, 42%, 37%)"
-    clear.style.borderBottom =  "3px  soloid hsl(185, 58%, 25%)"
+    clear.style.borderBottom = "3px  soloid hsl(185, 58%, 25%)"
     deleteTag.style.backgroundColor = "hsl(185, 42%, 37%)";
     deleteTag.style.borderColor = "hsl(25, 99%, 27%)";
     content.style.color = "black";
@@ -65,22 +64,51 @@ function changeStyle2() {
         item.style.color = "yellow";
         item.style.borderWidth = " bottom 2px solid red";
         item.style.borderBottom = "thick solid hsl(290, 70%, 36%)";
+        item.addEventListener('mouseover', function () {
+            item.style.backgroundColor = 'hsl(281, 89%, 26%)';
+        })
+        item.addEventListener('mouseout', function () {
+            item.style.backgroundColor = "hsl(268, 47%, 21%)" ;
+        })
+
     });
     selection.style.backgroundColor = " hsl(268, 71%, 12%)";
     Tages.style.backgroundColor = "hsl(176, 100%, 44%)";
     body.style.backgroundColor = " hsl(268, 75%, 9%)";
     backBtn.style.backgroundColor = "hsl(268, 71%, 12%) ";
     content.style.color = "yellow";
-    submitTap.style.backgroundColor ="hsl(176, 100%, 44%)";
-    submitTap.style.color ="white";
-    clear.style.backgroundColor ="hsl(281, 89%, 26%)";
-    clear.style.color ="white";
+    submitTap.style.backgroundColor = "hsl(176, 100%, 44%)";
+    submitTap.style.color = "white";
+    clear.style.backgroundColor = "hsl(281, 89%, 26%)";
+    clear.style.color = "white";
     deleteTag.style.backgroundColor = "hsl(281, 89%, 26%)";
     deleteTag.style.color = "white";
-    inputTap.style.color ="yellow";
-    inputTap.style.backgroundColor ="hsl(268, 71%, 12%)";
+    inputTap.style.color = "yellow";
+    inputTap.style.backgroundColor = "hsl(268, 71%, 12%)";
+
+    deleteTag.addEventListener("mouseover", function () {
+        deleteTag.style.backgroundColor = "hsl(285, 91%, 52%)";
+    });
+
+    deleteTag.addEventListener("mouseout", function () {
+        deleteTag.style.backgroundColor = "hsl(281, 89%, 26%)";
+    });
 
 
+    clear.addEventListener("mouseover", function () {
+        clear.style.backgroundColor = "hsl(285, 91%, 52%)";
+    });
+
+    clear.addEventListener("mouseout", function () {
+        clear.style.backgroundColor = "hsl(281, 89%, 26%)";
+    });
+    submitTap.addEventListener("mouseover", function () {
+        submitTap.style.backgroundColor = "hsl(176, 100%, 44%)";
+    });
+
+    submitTap.addEventListener("mouseout", function () {
+        submitTap.style.backgroundColor = "hsl(177, 92%, 70%)";
+    });
 }
 
 function handleClick(value) {

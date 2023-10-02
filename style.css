@@ -1,83 +1,86 @@
-*{
+* {
     list-style-type: none;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background-color: var(--Desaturated-dark-blue);
 }
-:root{
+
+:root {
     /* theme one */
---Very-dark-desaturated-blue: hsl(222, 26%, 31%);
---Very-dark-desaturated-bluee: hsl(223, 31%, 20%);
---Very-dark-desaturated-bluer: hsl(224, 36%, 15%);
-/* #### Keys */
---Desaturated-dark-blueer: hsl(225, 21%, 49%);
---Desaturated-dark-blue: hsl(224, 28%, 35%);
+    --Very-dark-desaturated-blue: hsl(222, 26%, 31%);
+    --Very-dark-desaturated-bluee: hsl(223, 31%, 20%);
+    --Very-dark-desaturated-bluer: hsl(224, 36%, 15%);
+    /* #### Keys */
+    --Desaturated-dark-blueer: hsl(225, 21%, 49%);
+    --Desaturated-dark-blue: hsl(224, 28%, 35%);
 
---Red: hsl(6, 63%, 50%);
---Dark-red: hsl(6, 70%, 34%);
+    --Red: hsl(6, 63%, 50%);
+    --Dark-red: hsl(6, 70%, 34%);
 
---Light-grayish-orange: hsl(30, 25%, 89%);
---Grayish-orange: hsl(28, 16%, 65%);
-/* #### Text */
---Very-dark-grayish-blue: hsl(221, 14%, 31%);
---White: hsl(0, 0%, 100%);
-/* ### Theme 2 */
-/* #### Backgrounds */
+    --Light-grayish-orange: hsl(30, 25%, 89%);
+    --Grayish-orange: hsl(28, 16%, 65%);
+    /* #### Text */
+    --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --White: hsl(0, 0%, 100%);
+    /* ### Theme 2 */
+    /* #### Backgrounds */
 
---Light-gray : hsl(0, 0%, 90%);
---Grayish-red: hsl(0, 5%, 81%);
---Very-light-gray: hsl(0, 0%, 93%);
-/* #### Keys */
+    --Light-gray: hsl(0, 0%, 90%);
+    --Grayish-red: hsl(0, 5%, 81%);
+    --Very-light-gray: hsl(0, 0%, 93%);
+    /* #### Keys */
 
---Dark-moderate-cyan: hsl(185, 42%, 37%);
---Very-dark-cyan : hsl(185, 58%, 25%);
+    --Dark-moderate-cyan: hsl(185, 42%, 37%);
+    --Very-dark-cyan: hsl(185, 58%, 25%);
 
---Orange: hsl(25, 98%, 40%);
---Dark-orange: hsl(25, 99%, 27%);
+    --Orange: hsl(25, 98%, 40%);
+    --Dark-orange: hsl(25, 99%, 27%);
 
---Light-grayish-yellow : hsl(45, 7%, 89%);
---Dark-grayish-orange: hsl(35, 11%, 61%);
-/* #### Text */
+    --Light-grayish-yellow: hsl(45, 7%, 89%);
+    --Dark-grayish-orange: hsl(35, 11%, 61%);
+    /* #### Text */
 
---Very-dark-grayish-yellow: hsl(60, 10%, 19%);
---White: hsl(0, 0%, 100%);
-/* ### Theme 3 */
-/* #### Backgrunds */
+    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --White: hsl(0, 0%, 100%);
+    /* ### Theme 3 */
+    /* #### Backgrunds */
 
---Very-dark-violet: hsl(268, 75%, 9%);
---Very-dark-violet: hsl(268, 71%, 12%);
-/* #### Keys */
+    --Very-dark-violet: hsl(268, 75%, 9%);
+    --Very-dark-violet: hsl(268, 71%, 12%);
+    /* #### Keys */
 
---Dark-violet : hsl(281, 89%, 26%);
---Vivid-magenta: hsl(285, 91%, 52%);
+    --Dark-violet: hsl(281, 89%, 30%);
+    --Vivid-magenta: hsl(285, 91%, 52%);
 
---Pure-cyan: hsl(176, 100%, 44%);
---Soft-cyan: hsl(177, 92%, 70%);
+    --Pure-cyan: hsl(176, 100%, 44%);
+    --Soft-cyan: hsl(177, 92%, 70%);
 
---Very-dark-violet: hsl(268, 47%, 21%);
---Dark-magenta: hsl(290, 70%, 36%);
-/* #### Text */
+    --Very-dark-violet: hsl(268, 47%, 21%);
+    --Dark-magenta: hsl(290, 70%, 36%);
+    /* #### Text */
 
---Light-yellow: hsl(52, 100%, 62%);
---Very-dark-blue: hsl(198, 20%, 13%);
---White: hsl(0, 0%, 100%);
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    --White: hsl(0, 0%, 100%);
 
 }
-.section{
+
+.section {
     /* border: solid; */
     height: 3vh;
-    width: 4.4vw;
+    width: 4.2vw;
     border-radius: 5px;
     position: relative;
     background-color: var(--Very-dark-desaturated-bluer);
 }
 
-strong{
+strong {
     /* border: solid red; */
     background-color: red;
     border-radius: 50%;
@@ -87,83 +90,125 @@ strong{
     left: 0px;
     padding: 4px;
 }
-.content{
+
+.content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     gap: 10px;
     color: var(--White);
-    
+
 }
-:hover{
-background-color: v;
-}
-.list{
+
+.list {
     display: flex;
     align-items: center;
     gap: 9px;
     position: relative;
-    
+
 
 }
-.pTag{
+
+.pTag {
     display: flex;
     position: absolute;
     top: -16px;
-    gap: 13px;
+    gap: 11px;
 }
-form{
-  width: 60vh;
+
+form {
+    width: 60vh;
 }
-form input{
-   padding: 20px;
-   width: 100%;
-   margin-bottom: 20px;
-   text-align: right;
-   background-color:var(--Very-dark-desaturated-bluer);
-   font-size: 29px;
-   color: var(--White);
-   border: none;
+
+form input {
+    padding: 20px;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 20px;
+    text-align: right;
+    background-color: var(--Very-dark-desaturated-bluer);
+    font-size: 32px;
+    color: var(--White);
+    border: none;
 }
- button{
-    padding: 15px;
+
+button {
+    padding: 19px;
     width: 23%;
     margin-bottom: 10px;
-    background-color:hsl(0, 0%, 93%);
+    background-color: hsl(0, 0%, 93%);
     color: var(--Very-dark-grayish-blue);
     font-size: 19px;
     text-align: center;
     align-items: center;
-    border-radius: 12px;
+    border-radius: 10px;
     border: none;
-    
+
 }
- button:hover{
-     background-color: white;
+
+button:hover {
+    background-color: white;
+}
+
+.bg {
+    background-color: var(--Very-dark-desaturated-blue);
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#reset {
+    width: 50%;
+    background-color: var(--Desaturated-dark-blueer);
+    color: var(--White);
+    /* border-bottom: solid 4px hsl(185, 58%, 25%); */
+
+}
+
+#equal {
+    width: 45.5%;
+    background-color: var(--Red);
+    color: var(--White);
+    /* border-bottom: solid 4px hsl(25, 99%, 27%); */
+
+}
+
+#delete {
+    background-color: var(--Desaturated-dark-blueer);
+    color: var(--White);
+    /* border-bottom: solid 4px hsl(185, 58%, 25%)   ; */
+}
+
+@media only screen and (max-width: 600px) {
+    h4 {
+        font-size: 9px;
     }
-    .bg{
-        background-color:var(--Very-dark-desaturated-blue);
-        text-align: center;
-        align-items: center;
-        padding-top: 15px;
+
+    form {
+        width: 55.5vh;
+        margin-inline: auto;
     }
-    #reset {
+
+    .pTag {
+        position: absolute;
+        gap: 7px;
+   margin-top: -13px;
+    }
+
+    .list {
         width: 50%;
-        background-color: var(--Desaturated-dark-blueer);
-        color: var(--White);
-        /* border-bottom: solid 4px hsl(185, 58%, 25%); */
-        
     }
-    #equal{
-        width: 45.5%;
-        background-color: var(--Red);
-        color: var(--White);
-        /* border-bottom: solid 4px hsl(25, 99%, 27%); */
-        
+
+    .section {
+        height: 3vh;
+        width:10vw;
+        border-radius: 5px;
     }
-    #delete{
-        background-color:var(--Desaturated-dark-blueer);
-        color: var(--White);
-        /* border-bottom: solid 4px hsl(185, 58%, 25%)   ; */
+
+    strong {
+        height: 16px;
+        width: 12px;
     }
+
+}
